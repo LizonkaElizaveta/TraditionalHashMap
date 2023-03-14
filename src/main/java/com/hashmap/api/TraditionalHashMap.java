@@ -8,8 +8,6 @@ public interface TraditionalHashMap<K, V> {
 
     boolean containsKey(K key);
 
-    boolean containsValue(K value);
-
     V remove(K key);
 
 }
