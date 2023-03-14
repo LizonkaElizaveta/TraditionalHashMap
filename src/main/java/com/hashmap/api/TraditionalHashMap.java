@@ -1,4 +1,4 @@
-package org.example.api;
+package com.hashmap.api;
 
 public interface TraditionalHashMap<K, V> {
 
