@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="766e3fa3-9d62-45e0-8c28-3d60e4180536" name="Changes" comment="rename package">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TraditionalHashMapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="766e3fa3-9d62-45e0-8c28-3d60e4180536" name="Changes" comment="add junit tests to project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/HashMapImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TraditionalHashMapImpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/TraditionalHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/TraditionalHashMap.java" afterDir="false" />
     </list>
@@ -52,7 +52,30 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TraditionalHashMapTest.putElement">
+  <component name="RunManager" selected="Gradle.TraditionalHashMapTest">
+    <configuration name="TraditionalHashMapTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TraditionalHashMapTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="TraditionalHashMapTest.getElement" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -101,6 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TraditionalHashMapTest" />
         <item itemvalue="Gradle.TraditionalHashMapTest.putElement" />
         <item itemvalue="Gradle.TraditionalHashMapTest.getElement" />
       </list>
@@ -114,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678790511862</updated>
-      <workItem from="1678790513154" duration="8163000" />
+      <workItem from="1678790513154" duration="14279000" />
     </task>
     <task id="LOCAL-00001" summary="add interface hashmap">
       <created>1678790705924</created>
@@ -130,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678790785734</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add junit tests to project">
+      <created>1678807724813</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678807724813</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +170,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add interface hashmap" />
     <MESSAGE value="rename package" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename package" />
+    <MESSAGE value="add junit tests to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add junit tests to project" />
   </component>
 </project>
