@@ -1,4 +1,4 @@
-package com.hashmap.api;
+package com.hashmap.api.list;
 
 public interface TraditionalList<T> {
 
@@ -8,6 +8,6 @@ public interface TraditionalList<T> {
 
     boolean contains(T item);
 
-    void remove(T item);
+    boolean remove(T item);
 
 }

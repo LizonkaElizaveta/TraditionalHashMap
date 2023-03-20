@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="766e3fa3-9d62-45e0-8c28-3d60e4180536" name="Changes" comment="create interface List">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TraditionalListTest.java" afterDir="false" />
+    <list default="true" id="766e3fa3-9d62-45e0-8c28-3d60e4180536" name="Changes" comment="create tests for List class">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/list/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/list/TraditionalListImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/TraditionalList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/TraditionalList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/HashMapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/HashMapImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/TraditionalHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/TraditionalHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/TraditionalList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/list/TraditionalList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TraditionalHashMapImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TraditionalHashMapImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TraditionalHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TraditionalHashMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TraditionalListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TraditionalListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +50,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -138,7 +146,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678790511862</updated>
-      <workItem from="1678790513154" duration="17398000" />
+      <workItem from="1678790513154" duration="26951000" />
     </task>
     <task id="LOCAL-00001" summary="add interface hashmap">
       <created>1678790705924</created>
@@ -175,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679303880241</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create tests for List class">
+      <created>1679304679280</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679304679280</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +202,7 @@
     <MESSAGE value="add junit tests to project" />
     <MESSAGE value="create array bounds method handler and tests" />
     <MESSAGE value="create interface List" />
-    <option name="LAST_COMMIT_MESSAGE" value="create interface List" />
+    <MESSAGE value="create tests for List class" />
+    <option name="LAST_COMMIT_MESSAGE" value="create tests for List class" />
   </component>
 </project>

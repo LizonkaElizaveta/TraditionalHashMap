@@ -1,4 +1,4 @@
-import com.hashmap.api.TraditionalHashMap;
+import com.hashmap.api.map.TraditionalHashMap;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -37,9 +37,7 @@ public class TraditionalHashMapTest {
 
         map.remove("Universe");
 
-        assertThrows(NoSuchElementException.class, () -> {
-            map.get("Universe");
-        });
+        assertThrows(NoSuchElementException.class, () -> map.get("Universe"));
     }
 
     @Test

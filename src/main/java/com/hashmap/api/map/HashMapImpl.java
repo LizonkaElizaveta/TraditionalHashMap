@@ -1,6 +1,4 @@
-package com.hashmap.api;
-
-import java.lang.reflect.Array;
+package com.hashmap.api.map;
 
 public class HashMapImpl<K, V> implements TraditionalHashMap<K, V> {
     private static int ARRAY_BOUND = 16;

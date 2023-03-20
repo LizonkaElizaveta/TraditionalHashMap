@@ -1,7 +1,8 @@
-import com.hashmap.api.TraditionalList;
+import com.hashmap.api.list.TraditionalList;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
 import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -42,8 +43,6 @@ public class TraditionalListTest {
 
         list.remove("Human");
 
-        assertThrows(NoSuchElementException.class, () -> {
-            list.get(3);
-        });
+        assertThrows(NoSuchElementException.class, () -> list.get(3));
     }
 }

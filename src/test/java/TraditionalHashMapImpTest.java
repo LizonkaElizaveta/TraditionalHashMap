@@ -1,4 +1,4 @@
-import com.hashmap.api.HashMapImpl;
+import com.hashmap.api.map.HashMapImpl;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
