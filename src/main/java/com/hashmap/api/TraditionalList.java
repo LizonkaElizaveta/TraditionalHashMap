@@ -2,7 +2,9 @@ package com.hashmap.api;
 
 public interface TraditionalList<T> {
 
-    void addList(T item);
+    void add(T item);
+
+    T get(int index);
 
     boolean contains(T item);
 
