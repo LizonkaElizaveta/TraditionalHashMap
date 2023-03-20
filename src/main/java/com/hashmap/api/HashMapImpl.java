@@ -4,15 +4,14 @@ import java.lang.reflect.Array;
 
 public class HashMapImpl<K, V> implements TraditionalHashMap<K, V> {
     private static int ARRAY_BOUND = 16;
-    private int[] array = new int[ARRAY_BOUND];
-//    private V[] array = (V[]) new Object[ARRAY_BOUND];
+//    private int[] array = new int[ARRAY_BOUND];
+    private V[] array = (V[]) new Object[ARRAY_BOUND];
 
 
     @Override
     public void put(K key, V value) {
-
         //key.hashCode() = -55555
-        array[boundsIntParse(key.hashCode())] = value;
+//        array[boundsIntParse(key.hashCode())] = value;
     }
 
     @Override
