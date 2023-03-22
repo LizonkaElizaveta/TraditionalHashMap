@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="766e3fa3-9d62-45e0-8c28-3d60e4180536" name="Changes" comment="create tests for List class">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/list/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/list/TraditionalListImpl.java" afterDir="false" />
+    <list default="true" id="766e3fa3-9d62-45e0-8c28-3d60e4180536" name="Changes" comment="create methods add(), contains() and remove() for List">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/MapEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/HashMapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/HashMapImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/TraditionalHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/TraditionalHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/TraditionalList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/list/TraditionalList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TraditionalHashMapImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TraditionalHashMapImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/list/TraditionalList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/list/TraditionalList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/list/TraditionalListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/list/TraditionalListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/HashMapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/HashMapImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TraditionalHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TraditionalHashMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TraditionalListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TraditionalListTest.java" afterDir="false" />
     </list>
@@ -60,7 +57,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TraditionalHashMapTest">
+  <component name="RunManager" selected="Gradle.TraditionalHashMapTest.putElement">
     <configuration name="TraditionalHashMapTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -132,8 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TraditionalHashMapTest" />
         <item itemvalue="Gradle.TraditionalHashMapTest.putElement" />
+        <item itemvalue="Gradle.TraditionalHashMapTest" />
         <item itemvalue="Gradle.TraditionalHashMapTest.getElement" />
       </list>
     </recent_temporary>
@@ -146,7 +143,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678790511862</updated>
-      <workItem from="1678790513154" duration="26951000" />
+      <workItem from="1678790513154" duration="33475000" />
     </task>
     <task id="LOCAL-00001" summary="add interface hashmap">
       <created>1678790705924</created>
@@ -190,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679304679280</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="create methods add(), contains() and remove() for List">
+      <created>1679323514477</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679323514477</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +207,7 @@
     <MESSAGE value="create array bounds method handler and tests" />
     <MESSAGE value="create interface List" />
     <MESSAGE value="create tests for List class" />
-    <option name="LAST_COMMIT_MESSAGE" value="create tests for List class" />
+    <MESSAGE value="create methods add(), contains() and remove() for List" />
+    <option name="LAST_COMMIT_MESSAGE" value="create methods add(), contains() and remove() for List" />
   </component>
 </project>

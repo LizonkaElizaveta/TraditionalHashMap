@@ -4,7 +4,7 @@ public interface TraditionalList<T> {
 
     void add(T item);
 
-    T get(int index);
+    T find(T item);
 
     boolean contains(T item);
 

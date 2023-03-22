@@ -2,6 +2,8 @@ package com.hashmap.api.list;
 
 import com.hashmap.api.list.TraditionalList;
 
+import java.util.HashMap;
+
 public class TraditionalListImpl<T> implements TraditionalList<T> {
 
     private ListNode<T> head;
@@ -21,7 +23,19 @@ public class TraditionalListImpl<T> implements TraditionalList<T> {
     }
 
     @Override
-    public T get(int index) {
+    public T find(T item) {
+        ListNode<T> element = head;
+
+        while (element != null) {
+
+            if (element.value.equals(item)) {
+                return element.value;
+            }
+
+            element = element.next;
+
+        }
+
         return null;
     }
 

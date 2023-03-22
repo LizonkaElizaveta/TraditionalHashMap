@@ -1,3 +1,4 @@
+import com.hashmap.api.map.HashMapImpl;
 import com.hashmap.api.map.TraditionalHashMap;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -8,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TraditionalHashMapTest {
 
-    private static TraditionalHashMap<String, String> map;
+    private static TraditionalHashMap<String, String> map = new HashMapImpl<>();
 
     @BeforeAll
     public static void setUpMap() {
@@ -22,6 +23,9 @@ public class TraditionalHashMapTest {
         map.put("Red", "Panther");
 
         assertEquals("Panther", map.get("Red"));
+
+        map.put("Red", "Lion");
+        assertEquals("Lion", map.get("Red"));
     }
 
     @Test

@@ -1,15 +1,19 @@
 package com.hashmap.api.map;
 
+import com.hashmap.api.list.TraditionalList;
+import com.hashmap.api.list.TraditionalListImpl;
+
 public class HashMapImpl<K, V> implements TraditionalHashMap<K, V> {
-    private static int ARRAY_BOUND = 16;
-//    private int[] array = new int[ARRAY_BOUND];
-    private V[] array = (V[]) new Object[ARRAY_BOUND];
+    private static final int ARRAY_BOUND = 16;
+    private TraditionalList<MapEntry<K, V>>[] array = (TraditionalList<MapEntry<K, V>>[]) new TraditionalListImpl<?>[ARRAY_BOUND];
 
 
     @Override
     public void put(K key, V value) {
-        //key.hashCode() = -55555
-//        array[boundsIntParse(key.hashCode())] = value;
+        MapEntry<K, V> data = new MapEntry<>(key, value);
+        TraditionalList<MapEntry<K, V>> list = new TraditionalListImpl<>();
+        array[boundsIntParse(key.hashCode())] = list;
+        list.add(data);
     }
 
     @Override

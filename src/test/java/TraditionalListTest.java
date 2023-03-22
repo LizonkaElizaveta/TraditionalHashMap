@@ -2,7 +2,6 @@ import com.hashmap.api.list.TraditionalList;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.util.HashMap;
 import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -21,13 +20,13 @@ public class TraditionalListTest {
     void addListElement() {
         list.add("Tiger");
 
-        assertEquals("Tiger", list.get(2));
+        assertEquals("Tiger", list.find("Tiger"));
     }
 
     @Test
     void getListElement() {
-        assertEquals("Tree", list.get(0));
-        assertEquals("Flower", list.get(1));
+        assertEquals("Tree", list.find("Tree"));
+        assertEquals("Flower", list.find("Flower"));
     }
 
     @Test
@@ -39,10 +38,10 @@ public class TraditionalListTest {
     @Test
     void removeListItem() {
         list.add("Human");
-        assertEquals("Human", list.get(3));
+        assertEquals("Human", list.find("Human"));
 
         list.remove("Human");
 
-        assertThrows(NoSuchElementException.class, () -> list.get(3));
+        assertThrows(NoSuchElementException.class, () -> list.find("Human"));
     }
 }
