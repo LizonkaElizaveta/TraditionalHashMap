@@ -12,13 +12,21 @@ public class HashMapImpl<K, V> implements TraditionalHashMap<K, V> {
     public void put(K key, V value) {
         MapEntry<K, V> data = new MapEntry<>(key, value);
         TraditionalList<MapEntry<K, V>> list = new TraditionalListImpl<>();
-        array[boundsIntParse(key.hashCode())] = list;
+
         list.add(data);
+        array[boundsIntParse(key.hashCode())] = list;
     }
 
     @Override
     public V get(K key) {
-        return null;
+        MapEntry<K, V> data = new MapEntry<>(key, null);
+        int index = boundsIntParse(key.hashCode());
+
+        if (index > array.length) {
+            return null;
+        }
+
+        return array[index].find(data).value;
     }
 
     @Override

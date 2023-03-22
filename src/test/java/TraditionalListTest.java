@@ -1,4 +1,6 @@
 import com.hashmap.api.list.TraditionalList;
+import com.hashmap.api.list.TraditionalListImpl;
+import com.hashmap.api.map.MapEntry;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -8,12 +10,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TraditionalListTest {
 
-    private static TraditionalList<String> list;
+    private static TraditionalList<String> list = new TraditionalListImpl<>();
 
     @BeforeAll
-    void setUpList() {
+    static void setUpList() {
         list.add("Tree");
         list.add("Flower");
+    }
+
+    @Test
+    void name() {
+        assertTrue(new MapEntry<String, String>("1", "2").equals(new MapEntry<String, String>("1", "2")));
     }
 
     @Test

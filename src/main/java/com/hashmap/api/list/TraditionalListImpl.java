@@ -1,9 +1,5 @@
 package com.hashmap.api.list;
 
-import com.hashmap.api.list.TraditionalList;
-
-import java.util.HashMap;
-
 public class TraditionalListImpl<T> implements TraditionalList<T> {
 
     private ListNode<T> head;
@@ -28,8 +24,8 @@ public class TraditionalListImpl<T> implements TraditionalList<T> {
 
         while (element != null) {
 
-            if (element.value.equals(item)) {
-                return element.value;
+            if (element.item.hashCode() == item.hashCode() && element.item.equals(item)) {
+                return element.item;
             }
 
             element = element.next;
@@ -45,7 +41,7 @@ public class TraditionalListImpl<T> implements TraditionalList<T> {
 
         while (element != null) {
 
-            if (element.value.equals(item)) {
+            if (element.item.equals(item)) {
                 return true;
             }
 
@@ -62,7 +58,7 @@ public class TraditionalListImpl<T> implements TraditionalList<T> {
 
         while (current != null) {
 
-            if (current.value.equals(item)) {
+            if (current.item.equals(item)) {
 
                 if (previous == null) {
                     // element is in the start

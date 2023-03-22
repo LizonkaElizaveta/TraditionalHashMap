@@ -2,11 +2,11 @@ package com.hashmap.api.list;
 
 public class ListNode<T> {
 
-    T value;
+    T item;
     ListNode<T> next;
 
     public ListNode(T value) {
-        this.value = value;
+        this.item = value;
     }
 }
 
