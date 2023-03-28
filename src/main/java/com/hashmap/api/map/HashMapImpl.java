@@ -61,7 +61,14 @@ public class HashMapImpl<K, V> implements TraditionalHashMap<K, V> {
 
     @Override
     public void remove(K key) {
+        MapEntry<K, V> data = new MapEntry<>(key, null);
+        int index = boundsIntParse(key.hashCode());
 
+        MapEntry<K, V> element = array[index].find(data);
+
+        if (element !=null) {
+            array[index].remove(data);
+        }
     }
 
     protected int boundsIntParse(int keyHash) {
