@@ -29,6 +29,19 @@ public class TraditionalHashMapTest {
     }
 
     @Test
+    void putElementWithOneHashcode() {
+        map.put("1", "Panther");
+
+        assertEquals("Panther", map.get("1"));
+
+        map.put("12", "NotLion");
+//        map.put("2", "Lion");
+        assertEquals("NotLion", map.get("12"));
+
+        assertEquals("Panther", map.get("1"));
+    }
+
+    @Test
     void getElement() {
         assertEquals("world", map.get("Hello"));
         assertEquals("is alive", map.get("Tsoi"));
@@ -41,7 +54,7 @@ public class TraditionalHashMapTest {
 
         map.remove("Universe");
 
-        assertThrows(NoSuchElementException.class, () -> map.get("Universe"));
+        assertNull(map.get("Universe"));
     }
 
     @Test
@@ -52,9 +65,7 @@ public class TraditionalHashMapTest {
 
     @Test
     void throwsExceptionIfKeyDoesNotExist() {
-        assertThrows(NoSuchElementException.class, () -> {
-            map.get("Hi!");
-        });
+         assertNull( map.get("Hi!"));
     }
 
     @Test

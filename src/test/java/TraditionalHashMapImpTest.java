@@ -9,7 +9,7 @@ public class TraditionalHashMapImpTest extends HashMapImpl<String,String> {
 
         int bound = boundsIntParse(56);
 
-        assertEquals(12,bound);
+        assertEquals(8,bound);
 
     }
 }

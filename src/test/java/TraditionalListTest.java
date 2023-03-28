@@ -19,11 +19,6 @@ public class TraditionalListTest {
     }
 
     @Test
-    void name() {
-        assertTrue(new MapEntry<String, String>("1", "2").equals(new MapEntry<String, String>("1", "2")));
-    }
-
-    @Test
     void addListElement() {
         list.add("Tiger");
 
@@ -49,6 +44,7 @@ public class TraditionalListTest {
 
         list.remove("Human");
 
-        assertThrows(NoSuchElementException.class, () -> list.find("Human"));
+        assertNull(list.find("Human"));
+
     }
 }
