@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="766e3fa3-9d62-45e0-8c28-3d60e4180536" name="Changes" comment="create get method of hashmap">
+    <list default="true" id="766e3fa3-9d62-45e0-8c28-3d60e4180536" name="Changes" comment="add remove method to hashmap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/HashMapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/HashMapImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TraditionalHashMapImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TraditionalHashMapImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/MapEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/api/map/MapEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TraditionalHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TraditionalHashMapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TraditionalListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TraditionalListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +64,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TraditionalHashMapTest.removeElement">
-    <configuration name="TraditionalHashMapImpTest.boundsIntParseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'TraditionalHashMap.test'">
+    <configuration name="Tests in 'TraditionalHashMap.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -78,8 +77,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;TraditionalHashMapImpTest.boundsIntParseTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TraditionalHashMapTest.removeElement" />
+        <item itemvalue="Gradle.Tests in 'TraditionalHashMap.test'" />
         <item itemvalue="Gradle.TraditionalHashMapTest.stressedTest" />
+        <item itemvalue="Gradle.TraditionalHashMapTest.removeElement" />
         <item itemvalue="Gradle.TraditionalHashMapTest.throwsExceptionIfKeyDoesNotExist" />
         <item itemvalue="Gradle.TraditionalHashMapTest" />
-        <item itemvalue="Gradle.TraditionalHashMapImpTest.boundsIntParseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +196,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678790511862</updated>
-      <workItem from="1678790513154" duration="46271000" />
+      <workItem from="1678790513154" duration="48146000" />
     </task>
     <task id="LOCAL-00001" summary="add interface hashmap">
       <created>1678790705924</created>
@@ -264,7 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679488900186</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix put method">
+      <created>1680014676152</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680014676152</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add remove method to hashmap">
+      <created>1680014952937</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680014952937</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,22 +291,40 @@
     <MESSAGE value="create methods add(), contains() and remove() for List" />
     <MESSAGE value="create add method of hashmap" />
     <MESSAGE value="create get method of hashmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="create get method of hashmap" />
+    <MESSAGE value="fix put method" />
+    <MESSAGE value="add remove method to hashmap" />
+    <option name="LAST_COMMIT_MESSAGE" value="add remove method to hashmap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/TraditionalHashMapTest.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hashmap/api/map/HashMapImpl.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="21" />
+          <line>38</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hashmap/api/map/MapEntry.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.hashmap.api.map.MapEntry" memberName="key" />
+        <PinnedItemInfo parentTag="com.hashmap.api.list.TraditionalListImpl" memberName="head" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="((MapEntry)((ListNode)((TraditionalListImpl[])((HashMapImpl)map).array)[14].head).item).value" custom="com.hashmap.api.map.MapEntry,com.hashmap.api.list.ListNode,com.hashmap.api.list.TraditionalListImpl[],com.hashmap.api.map.HashMapImpl" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

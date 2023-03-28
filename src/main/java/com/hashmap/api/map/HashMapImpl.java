@@ -36,10 +36,6 @@ public class HashMapImpl<K, V> implements TraditionalHashMap<K, V> {
         MapEntry<K, V> data = new MapEntry<>(key, null);
         int index = boundsIntParse(key.hashCode());
 
-        if (index > array.length) {
-            return null;
-        }
-
         MapEntry<K, V> element = array[index].find(data);
 
         if (element != null) {

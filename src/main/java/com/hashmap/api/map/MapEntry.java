@@ -23,6 +23,6 @@ public class MapEntry<K, V> {
             return false;
         }
         MapEntry<K,V> item = (MapEntry<K,V>) obj;
-        return key == item.key;
+        return key.equals(item.key);
     }
 }

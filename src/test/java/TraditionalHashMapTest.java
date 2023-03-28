@@ -65,7 +65,7 @@ public class TraditionalHashMapTest {
 
     @Test
     void throwsExceptionIfKeyDoesNotExist() {
-         assertNull( map.get("Hi!"));
+        assertNull(map.get("Hi!"));
     }
 
     @Test
@@ -83,10 +83,10 @@ public class TraditionalHashMapTest {
         int boundValue = 10_000;
 
         for (int i = 0; i < boundValue; i++) {
-            map.put("value " + i, "" + i);
+            map.put("value " + i, i + "");
         }
         assertEquals("5000", map.get("value 5000"));
         assertEquals("100", map.get("value 100"));
-        assertEquals("9999", map.get("value 9999"));
+        assertEquals("12", map.get("value 12"));
     }
 }
